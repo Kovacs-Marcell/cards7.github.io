@@ -1,0 +1,582 @@
+body {
+    margin: 0;
+    background-image: url("kepek/háttér.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .show-overlay {
+    display: block; /* Megjelenítés éjszakai módban */
+} 
+
+.felsocim3 {
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+#toast-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    z-index: 9999;
+}
+
+#toast {
+    background-color: rgb(255, 230, 0);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#close-toast {
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#close-toast:hover {
+    color: red;
+}
+
+#toast img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.dark-mode {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.dark-mode-text {
+        color: #fff;
+}
+
+.dark-mode .card {
+    background-color: #222;
+    color: #fff;
+}
+.dark-mode .felso {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode .felsocim {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode .also {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode .also1 {
+    background-color: #222;
+    color: #fff;
+}
+.dark-mode .h2 {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode .cards {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode #toast-container {
+    background-color: #222;
+    color: #fff;
+}
+
+
+.dark-mode .felsocim2 {
+    background-color: #222;
+    color: #fff;
+}
+.dark-mode .body6 {
+    background-color: #222;
+    color: #fff;
+}
+.dark-mode .also2 {
+    background-color: #222;
+    color: #fff;
+}
+.dark-mode .todo-title {
+    background-color: #222;
+    color: #fff;
+}
+.dark-mode .toggle {
+    background-color: #222;
+    color: #fff;
+}
+
+.body2{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.felso{
+    background-color: rgb(255, 230, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+}
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+  
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+  
+
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+}
+  
+
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+  
+
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+  
+
+.form-container .cancel {
+    background-color: red;
+}
+  
+ 
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.felsocim{
+    background-color: rgb(255, 230, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+
+.felsocim2{
+    background-color: rgb(255, 230, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    height: 45px;
+}
+
+.body1{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+nav{
+    width: 100%;
+    background: rgb(255, 230, 0);
+}
+
+ul{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    /* display: inline-block; */
+    padding: 30px;
+}
+
+ul li:hover{
+    background: rgb(235, 235, 235);
+}
+
+ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.toggle{
+    position: fixed;
+    width: 100%;
+    padding: 0px 1px;
+    background: rgb(255, 230, 0);
+    text-align:right;
+    box-sizing: border-box;
+    color: black;
+    font-size: 21px;
+    display: none;
+}
+
+@media (max-width:5000px)
+{
+    .toggle{
+        display: block;
+    }
+}
+ul{
+    width: 80%;
+    display: none;
+}
+
+ul li{
+    text-align: center;
+    display:block;
+}
+.active{
+    display: block;
+}
+
+.toggle.opened{
+    top: 100%;
+}
+
+
+
+.cim{
+    position: relative;
+    top: -4px;
+    left: -90px;
+    right: 15px;
+    margin: 1px;
+    text-align: left;
+}
+
+.cim2{
+    position: relative;
+    top: -4px;
+    left: -39px;
+    right: 15px;
+    margin: 1px;
+    text-align: left;
+}
+
+.cim3{
+    position: relative;
+    top: -4px;
+    left: -2px;
+    right: 15px;
+    margin: 1px;
+    text-align: left;
+}
+
+.cards{
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: white;
+    width: 370px;
+    height: 550px;
+    margin: 10px;
+    box-shadow: 5px 5px rgb(224, 224, 224);
+}
+#kakukktojas{
+    background-color: white;
+}
+
+h2, h3{
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    
+    #kakukktojas, h3{
+        display: none;
+    }
+}
+
+.gomb{
+    position: relative;
+    top: -7px;
+    right: 10px;
+    left: 22px;
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.gomb:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+.gomb1{
+    position: relative;
+    top: 29px;
+    right: 10px;
+    left: 22px;
+    width: 110px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.gomb1:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+.gomb2{
+    position: relative;
+    top: 55px;
+    right: 10px;
+    left: 21px;
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.gomb2:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+p1{
+    position: relative;
+    top: 1px;
+    left: 11px;
+    right: 10px;
+    background-color: rgb(255, 230, 0);
+    width: 48px;
+    height: 20px;
+    margin: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    position: relative;
+    top: -15px;
+    left: 21px;
+    right: 15px;
+    margin: 1px;
+    text-align: left;
+    font-size: 110%;
+    color: rgba(71, 70, 70, 0.705);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p2{
+    position: relative;
+    top: 1px;
+    left: 12px;
+    right: 10px;
+    background-color: rgb(255, 230, 0);
+    width: 98px;
+    height: 20px;
+    margin: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p3{
+    position: relative;
+    top: 1px;
+    left: 11px;
+    right: 10px;
+    background-color: rgb(255, 230, 0);
+    width: 98px;
+    height: 20px;
+    margin: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p4{
+    font-size: 83%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p5{
+    font-size: 86%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p6{
+    font-size: 83%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p7{
+    position: relative;
+    left: 9px;
+    right: 10px;
+    font-size: 83%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p8{
+    position: relative;
+    left: -68px;
+    right: 10px;
+    font-size: 83%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p9{
+    position: relative;
+    left: -112px;
+    right: 10px;
+    margin-left: 40px;
+    font-size: 83%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.also {
+    background-color: rgb(255, 230, 0);
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: -857px;
+    right: -2px;
+    flex-wrap: wrap;
+    height: 250px;
+    width: 1857px;
+}
+
+.also1{
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    left: 36px;
+    right: -2px;
+}
+
+.body6{
+    margin: 0;
+    min-width: 250px;
+}
+
+.also2 {
+    text-align: center;
+    height: 300px;
+    width: 400px;
+    background-color: rgb(235, 235, 235);
+}
+
+
+.todo{
+    margin-top: 20px;
+}
+
+#taskInput {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#addTaskButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.taskItem {
+    margin-top: 10px;
+}
+
+
+.todo-title {
+    font-size: 24px;
+    color: #333;
+}
+
+.todo-input {
+    margin-bottom: 10px;
+}
+
+.todo-button {
+    background-color: #28a745;
+}
+
+.todo-list-item {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}

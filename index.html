@@ -1,0 +1,177 @@
+<!--
+intendálás=SHIFt+ALT+F
+sortőrés=ALT+Z
+display: flex;
+flex-wrap: wrap;
+justify-content: center; /*középre vízszintesen*/
+align-items: center; /*függölegesen középre*/
+-->
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMD munkái</title>
+    <link rel="shortcut icon" href="kepek/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stilus.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+</head>
+ <body>
+    <script src="script.js"></script>
+    <div class="felsocim3">
+   
+        <div class="body1">
+    <nav>
+        <div class="toggle">
+            <i class="fa fa-bars menu" aria-hidden="true"></i>   
+        </div>
+        <ul >
+            <li><a href="https://sites.google.com/view/my-tasks-kovcs-marcell-dominik/python">Python</a></li>
+            <li><a href="https://sites.google.com/view/my-tasks-kovcs-marcell-dominik/web">Web</a></li>
+            <li><a href="https://sites.google.com/view/my-tasks-kovcs-marcell-dominik/digikult">Digikult</a></li>
+            <li><a href="https://sites.google.com/view/my-tasks-kovcs-marcell-dominik/projekt">Projekt</a></li>
+            <li><a href="https://sites.google.com/view/my-tasks-kovcs-marcell-dominik/h%C3%A1l%C3%B3zati-alapok">Hálózati alapok</a></li>
+        </ul>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu').click(function(){
+                $('ul').toggleClass('active');
+            })
+        })
+
+</script>
+    </div>
+    
+    <div id="toast-container">
+    <div id="toast">
+        <span id="close-toast">&times;</span>
+        <img src="kepek/kep5.webp" alt="Értesítés kép">
+        <p>Kovács Marcell-nek hívnak.17 éves vagyok.</p>
+    </div>
+</div>
+    <div class="felso">
+        <h2>KMD webszerkesztési munkáim</h2>
+    </div>
+    <div class="felsocim">
+        <h3>2024. március-június</h3>
+    </div>
+    <div class="felsocim2">
+        <div id="night-mode-toggle">
+            <button id="night-mode-button">Éjszakai üzemmód bekapcsolása</button>
+        </div>
+<script>
+   
+        function toggleNightMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var paragraphs = document.querySelectorAll("p");
+        var darkModeToggle = document.getElementById("night-mode-button");
+
+        darkModeToggle.addEventListener("click", function() {
+            paragraphs.forEach(function(paragraph) {
+                paragraph.classList.toggle("dark-mode-text");
+            });
+        });
+    });
+</script>
+    </div>
+    
+    <div class="cards">
+        <div class="card">
+            <img  class="kep" src="kepek/kep4.png" alt="Társalgó" style="width: 100%;height: 50%;">
+            <p1>Blog</p1>
+            <div class="cim">
+                <h2>
+                <p5>BRAILLE-ÍRÁS</p5>
+            </h2>
+            </div>
+            
+            <p>A Braille-írás, más néven pontírás,</p> 
+            <p>a vakok számára készült és általuk </p> 
+            <p>használt, elfogadott írásrendszer.</p>
+            <a href="https://kovacs-marcell.github.io/iras1.github.io/"><button class="gomb2">TOVÁBB</button></a>
+            
+        </div>
+        <div class="cards">
+            <div class="card">
+            <img  class="kep" src="kepek/kep2.png" alt="Társalgó" style="width: 100%;height: 50%;">
+            <p2>Események</p2>
+            <div class="cim2">
+                <h2>
+                <p4>MI A CÉLTUDATOS ÉLET</p4>
+                <p7>SZÁMOMRA ? OKT.31-TŐL</p7>
+                </h2>
+            </div>
+            <p>Szeretnéd megtartani a téli</p>
+            <p>sötétségben is a kreativitásod</p>
+            <p>és...</p>
+            <a href="esemenyek.html"><button class="gomb1">JELENTKEZEM</button></a>
+        </div>
+        <div class="cards">
+            <div class="card">
+            <img  class="kep" src="kepek/kep3.png" alt="Társalgó" style="width: 100%;height: 50%;">
+            <p3>Ajánlatok</p3>
+            <div class="cim3">
+                <h2>
+                    <p6>KIS ÉS NAGY CSAPATHOZ</p6> <p6>ILLŐ</p6>
+                    <p8>PRIVÁT IRODÁK A</p8>
+                    <p9>KAPTÁRBAN!</p9>
+                </h2>  
+            </div>
+            <p>Itt az új év, bővült a csapatod és</p>
+            <p>kezdetitek kinőni az eddigi</p>
+            <p>irodátokat?</p>
+            <a href="ajanlatok.html"><button class="gomb">TOVÁBB</button></a>
+            <div class="body6">
+        
+            <div class="also2">
+                <h1 class="todo-title"> My To Do List</h1>
+            <div class="todo">
+                <input type="text" id="taskInput" class="todo-input" placeholder="Új feladat...">
+                <button id="addTaskButton" class="todo-button">Hozzáadás</button>
+                <ul id="taskList"></ul>
+            </div>
+            </div>
+                <script src="script.js"></script>
+            </div>
+            <div class="also">
+                <h2 class="also1">PROBÁLD KI!</h2> 
+            </div>
+    </div>
+    </div>
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+        <h1>Chat</h1>
+
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+    </div>
+
+    <script>
+        function openForm() {
+        document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    
+</div>
+</div>
+        <script src="script.js"></script>
+</body>
+</html>
